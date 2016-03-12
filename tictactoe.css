@@ -37,3 +37,8 @@ button {
     color: red;
     font-size: 100px;
 }
+body {
+  background-image: url("images/krem.jpg");
+  background-size: cover;
+}
+
