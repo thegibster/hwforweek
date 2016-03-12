@@ -1,40 +1,39 @@
-.row1,.row2,.row3  {
-  display: inline-block;
-  margin: auto;
-
-
+.row1,
+.row2,
+.row3 {
+    display: inline-block;
+    margin: auto;
 }
 #container {
-  position: fixed;
-  left: 40%;
-  top:20%;
-  text-align: center;
-
-
+    position: fixed;
+    left: 35%;
+    top: 20%;
+    text-align: center;
 }
 .topbut button {
-  width: 100px;
-  height: 100px;
-  margin: 5px 5px;
+    width: 150px;
+    height: 150px;
+    margin: 5px 5px;
 }
-
 .midbut button {
-  width: 100px;
-  height: 100px;
-  margin: 5px 5px;
-  font-size: 10px;
+    width: 150px;
+    height: 150px;
+    margin: 5px 5px;
 }
-
-.bottbut button{
-  width: 100px;
-  height: 100px;
-  margin: 5px 5px;
-  font-size: 10px;
-  vertical-align: top;
+.bottbut button {
+    width: 150px;
+    height: 150px;
+    margin: 5px 5px;
+    vertical-align: top;
 }
 #reset button {
-  margin-top: 20px;
-  font-size: 10px;
-  display:inline-block;
+    margin-top: 20px;
+    font-size: 10px;
+    display: inline-block;
 }
-
+button {
+    border-radius: 15px;
+    opacity: .70;
+    color: red;
+    font-size: 100px;
+}

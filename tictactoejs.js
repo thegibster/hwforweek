@@ -11,7 +11,7 @@ var currentPlayerMove = '';
 var resetButton = document.getElementById('resetBut');
 
 function winLogic() {
-    if (((pressedButtr1b1.innerHTML === pressedButtr2b1.innerHTML) && (pressedButtr1b1.innerHTML === pressedButtr3b1.innerHTML))&&
+    if (((pressedButtr1b1.innerHTML === pressedButtr2b1.innerHTML) && (pressedButtr1b1.innerHTML === pressedButtr3b1.innerHTML)) &&
         (pressedButtr1b1.innerHTML !== "" || pressedButtr2b1.innerHTML !== "" || pressedButtr3b1.innerHTML !== "")) {
         pressedButtr1b1.removeEventListener('click', letCheck);
         pressedButtr1b2.removeEventListener('click', letCheck);
@@ -25,7 +25,7 @@ function winLogic() {
         alert("You Won based on row 1");
         console.log("arfff");
     }
-    if (((pressedButtr1b2.innerHTML === pressedButtr2b2.innerHTML) && (pressedButtr1b2.innerHTML === pressedButtr3b2.innerHTML))&&
+    if (((pressedButtr1b2.innerHTML === pressedButtr2b2.innerHTML) && (pressedButtr1b2.innerHTML === pressedButtr3b2.innerHTML)) &&
         (pressedButtr1b2.innerHTML !== "" || pressedButtr2b2.innerHTML !== "" || pressedButtr3b2.innerHTML !== "")) {
         pressedButtr1b1.removeEventListener('click', letCheck);
         pressedButtr1b2.removeEventListener('click', letCheck);
@@ -39,7 +39,7 @@ function winLogic() {
         alert("You Won based on row 2");
         console.log("arfff");
     }
-    if (((pressedButtr1b3.innerHTML === pressedButtr2b3.innerHTML) && (pressedButtr1b3.innerHTML === pressedButtr3b3.innerHTML))&&
+    if (((pressedButtr1b3.innerHTML === pressedButtr2b3.innerHTML) && (pressedButtr1b3.innerHTML === pressedButtr3b3.innerHTML)) &&
         (pressedButtr1b3.innerHTML !== "" || pressedButtr2b3.innerHTML !== "" || pressedButtr3b3.innerHTML !== "")) {
         pressedButtr1b1.removeEventListener('click', letCheck);
         pressedButtr1b2.removeEventListener('click', letCheck);
@@ -53,7 +53,80 @@ function winLogic() {
         alert("You Won based on row 3");
         console.log("arfff");
     }
+    //column checking
+    if (((pressedButtr1b1.innerHTML === pressedButtr1b2.innerHTML) && (pressedButtr1b1.innerHTML === pressedButtr1b3.innerHTML)) &&
+        (pressedButtr1b3.innerHTML !== "" || pressedButtr2b3.innerHTML !== "" || pressedButtr3b3.innerHTML !== "")) {
+        pressedButtr1b1.removeEventListener('click', letCheck);
+        pressedButtr1b2.removeEventListener('click', letCheck);
+        pressedButtr1b3.removeEventListener('click', letCheck);
+        pressedButtr2b1.removeEventListener('click', letCheck);
+        pressedButtr2b2.removeEventListener('click', letCheck);
+        pressedButtr2b3.removeEventListener('click', letCheck);
+        pressedButtr3b1.removeEventListener('click', letCheck);
+        pressedButtr3b2.removeEventListener('click', letCheck);
+        pressedButtr3b3.removeEventListener('click', letCheck);
+        alert("You Won based on row 3");
+        console.log("arfff");
+    }
+    if (((pressedButtr2b1.innerHTML === pressedButtr2b2.innerHTML) && (pressedButtr2b1.innerHTML === pressedButtr2b3.innerHTML)) &&
+        (pressedButtr2b1.innerHTML !== "" || pressedButtr2b2.innerHTML !== "" || pressedButtr2b3.innerHTML !== "")) {
+        pressedButtr1b1.removeEventListener('click', letCheck);
+        pressedButtr1b2.removeEventListener('click', letCheck);
+        pressedButtr1b3.removeEventListener('click', letCheck);
+        pressedButtr2b1.removeEventListener('click', letCheck);
+        pressedButtr2b2.removeEventListener('click', letCheck);
+        pressedButtr2b3.removeEventListener('click', letCheck);
+        pressedButtr3b1.removeEventListener('click', letCheck);
+        pressedButtr3b2.removeEventListener('click', letCheck);
+        pressedButtr3b3.removeEventListener('click', letCheck);
+        alert("You Won based on row 3");
+        console.log("arfff");
+    }
+    if (((pressedButtr3b1.innerHTML === pressedButtr3b2.innerHTML) && (pressedButtr3b1.innerHTML === pressedButtr3b3.innerHTML)) &&
+        (pressedButtr3b1.innerHTML !== "" || pressedButtr3b2.innerHTML !== "" || pressedButtr3b3.innerHTML !== "")) {
+        pressedButtr1b1.removeEventListener('click', letCheck);
+        pressedButtr1b2.removeEventListener('click', letCheck);
+        pressedButtr1b3.removeEventListener('click', letCheck);
+        pressedButtr2b1.removeEventListener('click', letCheck);
+        pressedButtr2b2.removeEventListener('click', letCheck);
+        pressedButtr2b3.removeEventListener('click', letCheck);
+        pressedButtr3b1.removeEventListener('click', letCheck);
+        pressedButtr3b2.removeEventListener('click', letCheck);
+        pressedButtr3b3.removeEventListener('click', letCheck);
+        alert("You Won based on row 3");
+        console.log("arfff");
+    }
+    //diagonal checking
+    if (((pressedButtr1b3.innerHTML === pressedButtr2b2.innerHTML) && (pressedButtr1b3.innerHTML === pressedButtr3b1.innerHTML)) &&
+        (pressedButtr3b1.innerHTML !== "" || pressedButtr2b2.innerHTML !== "" || pressedButtr1b3.innerHTML !== "")) {
+        pressedButtr1b1.removeEventListener('click', letCheck);
+        pressedButtr1b2.removeEventListener('click', letCheck);
+        pressedButtr1b3.removeEventListener('click', letCheck);
+        pressedButtr2b1.removeEventListener('click', letCheck);
+        pressedButtr2b2.removeEventListener('click', letCheck);
+        pressedButtr2b3.removeEventListener('click', letCheck);
+        pressedButtr3b1.removeEventListener('click', letCheck);
+        pressedButtr3b2.removeEventListener('click', letCheck);
+        pressedButtr3b3.removeEventListener('click', letCheck);
+        alert("You Won based on row 3");
+        console.log("arfff");
+    }
+    if (((pressedButtr1b1.innerHTML === pressedButtr2b2.innerHTML) && (pressedButtr1b1.innerHTML === pressedButtr3b3.innerHTML)) &&
+        (pressedButtr1b1.innerHTML !== "" || pressedButtr2b2.innerHTML !== "" || pressedButtr3b3.innerHTML !== "")) {
+        pressedButtr1b1.removeEventListener('click', letCheck);
+        pressedButtr1b2.removeEventListener('click', letCheck);
+        pressedButtr1b3.removeEventListener('click', letCheck);
+        pressedButtr2b1.removeEventListener('click', letCheck);
+        pressedButtr2b2.removeEventListener('click', letCheck);
+        pressedButtr2b3.removeEventListener('click', letCheck);
+        pressedButtr3b1.removeEventListener('click', letCheck);
+        pressedButtr3b2.removeEventListener('click', letCheck);
+        pressedButtr3b3.removeEventListener('click', letCheck);
+        alert("You Won based on row 3");
+        console.log("arfff");
+    }
 }
+
 function letCheck() {
     if (currentPlayerMove === '') {
         if (this.innerHTML === "") {
@@ -77,6 +150,7 @@ function letCheck() {
         alert("This box has been used!");
     }
 }
+
 function putBack() {
     pressedButtr1b1.innerHTML = '';
     pressedButtr1b2.innerHTML = '';
@@ -106,7 +180,7 @@ function putBack() {
     pressedButtr3b2.addEventListener('click', letCheck);
     pressedButtr3b3.addEventListener('click', letCheck);
     currentPlayerMove = '';
-    alert("The Game is Refreshed!")
+    //alert("The Game is Refreshed!")
 }
 
 pressedButtr1b1.addEventListener('click', letCheck);
