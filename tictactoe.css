@@ -40,5 +40,8 @@ button {
 body {
   background-image: url("images/krem.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
 }
-
+#nameHold{
+  background-color: gray;
+}
